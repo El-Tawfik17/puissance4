@@ -115,7 +115,7 @@ button:hover {
 .unige-logo {
     width: 160px;
     height: auto;
-    background: white;
+    background: rgb(224, 7, 148);
     padding: 8px 12px;
     border-radius: 10px;
 }
