@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Puissance 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Puissance 4</h1>
+
+        <select id="gameMode">
+            <option value="HUMAN_VS_HUMAN">Humain vs Humain</option>
+            <option value="HUMAN_VS_AI">Humain vs IA</option>
+            <option value="AI_VS_AI">IA vs IA</option>
+        </select>
+        <select id="aiType">
+            <option value="RANDOM">IA aléatoire</option>
+            <option value="HEURISTIC">IA heuristique</option>
+            <option value="MINIMAX">IA Minimax</option>
+            <option value="ALPHABETA">IA Alpha-Beta</option>
+        </select>
+        <select id="aiTypeP1">
+            <option value="RANDOM">IA Rouge : Aléatoire</option>
+            <option value="HEURISTIC">IA Rouge : Heuristique</option>
+            <option value="MINIMAX">IA Rouge : Minimax</option>
+            <option value="ALPHABETA">IA Rouge : Alpha-Beta</option>
+        </select>
+
+        <select id="aiTypeP2">
+            <option value="RANDOM">IA Jaune : Aléatoire</option>
+            <option value="HEURISTIC">IA Jaune : Heuristique</option>
+            <option value="MINIMAX">IA Jaune : Minimax</option>
+            <option value="ALPHABETA">IA Jaune : Alpha-Beta</option>
+        </select>
+
+<button id="aiStepBtn">Tour IA</button>
+
+        <div id="status">Chargement...</div>
+        <div id="stats">
+            <div>Parties jouées : <span id="gamesPlayed">0</span></div>
+            <div>Victoires rouge : <span id="redWins">0</span></div>
+            <div>Victoires jaune / IA : <span id="yellowWins">0</span></div>
+            <div>Matchs nuls : <span id="draws">0</span></div>
+        </div>
+        <div id="aiInfo">
+            <div>IA : <span id="aiAlgorithm">-</span></div>
+            <div>Dernier coup IA : <span id="aiLastMove">-</span></div>
+            <div>Positions explorées : <span id="aiNodes">0</span></div>
+        </div>
+
+        <div id="board"></div>
+
+        <button id="newGameBtn">Nouvelle partie</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
