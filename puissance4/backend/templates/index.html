@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Puissance 4</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <div class="container">
@@ -54,6 +54,6 @@
         <button id="newGameBtn">Nouvelle partie</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

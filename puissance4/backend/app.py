@@ -1,4 +1,9 @@
-
+from flask import (
+    Flask,
+    jsonify,
+    request,
+    render_template
+)
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -47,9 +52,7 @@ def get_ai_move(board, ai_type):
 
 @app.route("/")
 def home():
-    return jsonify({
-        "message": "API Puissance 4 fonctionne"
-    })
+    return render_template("index.html")
 
 
 @app.route("/new-game", methods=["POST"])

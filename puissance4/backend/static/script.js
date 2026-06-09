@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "";
 
 let board = [];
 let currentPlayer = 1;
@@ -14,7 +14,7 @@ async function newGame() {
     const aiTypeP1 = document.getElementById("aiTypeP1").value;
     const aiTypeP2 = document.getElementById("aiTypeP2").value;
 
-    const response = await fetch(`${API_URL}/new-game`, {
+    const response = await fetch(`/new-game`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
